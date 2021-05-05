@@ -1,0 +1,32 @@
+@use '../abstracts/variables';
+
+picture {
+  display: inline;
+  position: relative;
+}
+.img__desktop {
+  display: none;
+  @media only screen and (min-width: 1440px) {
+    display: block;
+    width: 540px;
+    height: 450px;
+    background-color: variables.$accent;
+    background-image: url(images/image-header-desktop.jpg);
+    background-size: contain;
+    background-blend-mode: multiply;
+    filter: contrast(0.7) saturate(170%);
+  }
+}
+.img__mobile {
+  display: block;
+  width: 328px;
+  height: 240.73px;
+  background-color: variables.$accent;
+  background-image: url(images/image-header-mobile.jpg);
+  background-size: contain;
+  background-blend-mode: multiply;
+  filter: contrast(0.7) saturate(170%);
+  @media only screen and (min-width: 1440px) {
+    display: none;
+  }
+}

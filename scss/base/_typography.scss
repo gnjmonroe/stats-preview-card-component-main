@@ -1,0 +1,66 @@
+@use "../abstracts/variables";
+
+// typefaces
+$fonts: (
+  inter: (
+    400: variables.$inter,
+    700: variables.$inter,
+  ),
+  lexend: (
+    400: variables.$lexend,
+  ),
+);
+
+// utility classes
+@each $font, $weights in $fonts {
+  @each $weight, $family in $weights {
+    .#{$font}-#{$weight} {
+      font-family: $family;
+      font-weight: $weight;
+    }
+  }
+}
+
+* {
+  text-align: center;
+  @media only screen and (min-width: 1440px) {
+    text-align: left;
+  }
+}
+
+p {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.header {
+  font-size: 28px;
+  line-height: 32px;
+  @media only screen and (min-width: 1440px) {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+.stat {
+  &__figure {
+    font-size: 24px;
+    line-height: 1.75;
+  }
+  &__unit {
+    font: {
+      family: variables.$inter;
+      weight: 400;
+      size: 12px;
+    }
+    letter-spacing: 1px;
+    @media only screen and (min-width: 1440px) {
+      font: {
+        family: variables.$lexend;
+        weight: 400;
+        size: 12px;
+      }
+      letter-spacing: 1px;
+    }
+  }
+}

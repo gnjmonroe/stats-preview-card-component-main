@@ -1,0 +1,31 @@
+@use 'abstracts/variables';
+
+@use 'base/reset';
+@use 'base/typography';
+
+@use 'components/picture';
+@use 'components/container';
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
+  background-color: variables.$main-bg;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 328px;
+  height: 780px;
+  background-color: variables.$card-bg;
+  @media only screen and (min-width: 1440px) {
+    flex-direction: row;
+    flex-flow: row-reverse;
+    width: 1110px;
+    height: 446px;
+  }
+}

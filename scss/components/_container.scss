@@ -1,0 +1,45 @@
+@use '../abstracts/variables';
+
+.container {
+  position: relative;
+  padding: 42px 28px;
+  height: 100%;
+  @media only screen and (min-width: 1440px) {
+    margin-right: 42px;
+    padding: 70px 72px;
+    width: 50%;
+  }
+}
+.header {
+  color: variables.$main-h;
+  width: 100%;
+  margin-bottom: 16px;
+  @media only screen and (min-width: 1440px) {
+    width: 384px;
+    margin-bottom: 25px;
+  }
+  &--accent {
+    color: variables.$accent;
+  }
+}
+.body {
+  color: variables.$main-p;
+  width: 100%;
+  margin-bottom: 32px;
+  @media only screen and (min-width: 1440px) {
+    width: 350px;
+    margin-bottom: 0;
+  }
+}
+.stats {
+  opacity: 1;
+}
+.stat {
+  &__figure {
+    color: variables.$main-h;
+  }
+  &__unit {
+    color: variables.$stat-h;
+    text-transform: uppercase;
+  }
+}
