@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/gnjmonroe/stats-preview-card-component-main)
+- Live Site URL: [Live Site](https://gnjmonroe.github.io/stats-preview-card-component-main/)
 
 ## My Process
 
@@ -83,7 +83,7 @@ Finally, I'd want to continue to develop my workflow, particularly my planning a
 
 ----------
 
-There's ~~~~probably~~~~ definitely a better way to do media queries in Sass/SCSS, but I don't know it yet and I've already overcomplicated this project enough. This is in the back of my mind for when a more complicated project comes up though. [This](https://css-tricks.com/approaches-media-queries-sass/) and [this](https://www.sitepoint.com/managing-responsive-breakpoints-sass/) are probably where I'll start.
+There's ~~probably~~ definitely a better way to do media queries in Sass/SCSS, but I don't know it yet and I've already overcomplicated this project enough. This is in the back of my mind for when a more complicated project comes up though. [This](https://css-tricks.com/approaches-media-queries-sass/) and [this](https://www.sitepoint.com/managing-responsive-breakpoints-sass/) are probably where I'll start.
 
 ### Useful resources
 
