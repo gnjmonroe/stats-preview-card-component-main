@@ -27,39 +27,34 @@
   <body>
     <main>
       <picture>
-        <div
-          class="img__desktop"
-          role="image"
-          aria-label="three young professionals working at a long table."
-        ></div>
-        <div
+        <source
+          media="(min-width: 1440px)"
+          srcset="./images/image-header-desktop.jpg"
+        />
+        <img
           class="img__mobile"
-          role="image"
-          aria-label="three young professionals working at a long table."
-        ></div>
+          src="./images/image-header-mobile.jpg"
+          alt="three young professionals working at a long table."
+        />
       </picture>
       <div class="container">
         <h2 class="header inter-700">
-          Get
-          <span class="header--accent">insights</span>
-          that help your business grow.
+          Get <span class="header--accent">insights</span> that help your
+          business grow.
         </h2>
         <p class="body inter-400">
           Discover the benefits of data analytics and make better decisions
           regarding revenue, customer experience, and overall efficiency.
         </p>
         <ul class="stats">
-          <li class="stat">
-            <h3 class="stat__figure inter-700">10k+</h3>
-            <h3 class="stat__unit">companies</h3>
+          <li class="stat stat__figure inter-700">
+            10k+ <span class="stat__unit">companies</span>
           </li>
-          <li class="stat">
-            <h3 class="stat__figure inter-700">314</h3>
-            <h3 class="stat__unit">templates</h3>
+          <li class="stat stat__figure inter-700">
+            314 <span class="stat__unit">templates</span>
           </li>
-          <li class="stat">
-            <h3 class="stat__figure inter-700">12M+</h3>
-            <h3 class="stat__unit">queries</h3>
+          <li class="stat stat__figure inter-700">
+            12M+ <span class="stat__unit">queries</span>
           </li>
         </ul>
       </div>

@@ -39,6 +39,7 @@
     color: variables.$main-h;
   }
   &__unit {
+    display: block;
     color: variables.$stat-h;
     text-transform: uppercase;
   }
